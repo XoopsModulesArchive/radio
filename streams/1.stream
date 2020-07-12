@@ -1,0 +1,12 @@
+<?php
+
+// Name of the radio station
+$name = "100% NL";
+
+// The url of the webstream
+$url  = "mms://wm1.streaming.castor.nl/100pctnl=wm2";
+
+// Video stream?
+$video  = "0";
+
+?>

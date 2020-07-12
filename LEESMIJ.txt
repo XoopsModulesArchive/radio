@@ -1,0 +1,7 @@
+Geef de server schrijfrechten (CHMOD 777) op de map "streams" en het bestand "config.inc.php".
+
+Om streams toe te voegen ga je naar de administatie van "Radio"
+ en klik op "Klik hier om de streams te beheren,".
+
+Als je wel/niet wilt dat gebruikers hun eigen stream kunnen luisterren ga dan naar de administratie van "Radio"
+ en klik op "of klik hier om de module instellingen te veranderren".

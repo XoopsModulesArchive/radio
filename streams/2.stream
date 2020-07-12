@@ -1,0 +1,12 @@
+<?php
+
+// Name of the radio station
+$name = "CoolMedRadio";
+
+// The url of the webstream
+$url  = "http://www.coolmedradio.com/listen.asx";
+
+// Video stream?
+$video  = "0";
+
+?>

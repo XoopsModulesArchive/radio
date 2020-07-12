@@ -1,0 +1,39 @@
+<script type="text/javascript">
+<!--
+function popupradio(myform)
+{
+if (! window.focus)return true;
+var radiopopup = window.open('', 'radio', 'height=60,width=210,scrollbars=no,resizable=1');
+if( !radiopopup ) {
+var error = document.getElementById("error");
+error.appendChild(document.createTextNode("<{$block.lang_error}>"));
+}
+myform.target='radio';
+return true;
+}
+//-->
+</script>
+
+<div id="error"></div>
+
+<div id="popupform">
+<form target="radio" method="get" name="RaDiO_ForM" action="<{$xoops_url}>/modules/radio/open.php" onsubmit="popupradio(this)">
+<select onchange="popupradio(this);document.RaDiO_ForM.submit();" name="predefstream" size="1">
+   <option>---</option>
+   <{php}>
+   include(XOOPS_ROOT_PATH.'/modules/radio/functions.php');
+   create_streamselect();
+   <{/php}>
+</select>
+<{if $block.allow_users == "1" }>
+<br />
+<strong><{$block.lang_choice}></strong>
+<br />
+<{$block.lang_url}> : <input name="stream" type="text" size="20" />
+<br />
+<{$block.lang_name}> : <input name="streamt" type="text" size="20" />
+<{/if}>
+<br /><br />
+<input type="submit" value="<{$block.lang_listen}>" />
+</form>
+</div>
